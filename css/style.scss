@@ -193,8 +193,10 @@ $grayBack: #e5e5e5;
     }
   }
   .service {
+    height: 100%;
+    width: 100%;
     &_wrap {
-      @include tri(55px);
+      @include tri(81px);
       position: relative;
       background-color: #3b3b3b;
       z-index: 7;
@@ -363,7 +365,7 @@ $grayBack: #e5e5e5;
     }
     @include paddingSide();
     background-color: #3b3b3b;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     padding-bottom: 185px;
     position: relative;
     z-index: 6;
