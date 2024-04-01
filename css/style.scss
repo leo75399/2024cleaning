@@ -310,6 +310,7 @@ $grayBack: #e5e5e5;
             > div {
               width: 50%;
               position: relative;
+
               @include mobile() {
                 width: 100%;
               }
@@ -317,6 +318,12 @@ $grayBack: #e5e5e5;
                 width: 100%;
               }
               &:nth-child(1) {
+                img {
+                  float: right;
+                  @include mobile() {
+                    float: left;
+                  }
+                }
                 &::after {
                   content: "清洗前";
                   position: absolute;
