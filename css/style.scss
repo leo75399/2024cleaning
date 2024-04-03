@@ -193,8 +193,6 @@ $grayBack: #e5e5e5;
     }
   }
   .service {
-    height: 100%;
-    width: 100%;
     &_wrap {
       @include tri(81px);
       position: relative;
@@ -356,7 +354,7 @@ $grayBack: #e5e5e5;
   .feedback {
     &_wrap {
       @include wrap;
-      @include tri(50px);
+      @include tri(73px);
       position: relative;
       z-index: 6;
       @include mobile() {
@@ -365,12 +363,12 @@ $grayBack: #e5e5e5;
     }
     @include paddingSide();
     background-color: #3b3b3b;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
     padding-bottom: 185px;
     position: relative;
     z-index: 6;
     @include mobile() {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
       padding-bottom: 125px;
     }
     h2 {
@@ -460,18 +458,30 @@ $grayBack: #e5e5e5;
           line-height: 30px;
         }
       }
-
       &_img {
         align-self: flex-end;
         max-width: 400px;
       }
-      .data_img1 {
+      &_img1 {
         max-width: 420px;
+      }
+      &_ps {
+        padding-top: 40px;
+        line-height: 27px;
+        width: 80%;
+        margin: 0 auto;
+        @include pad() {
+          font-size: 14px;
+          line-height: 22px;
+
+          width: 100%;
+        }
       }
     }
     .comment {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       &_title {
         img {
           margin: 0 auto;
@@ -486,12 +496,14 @@ $grayBack: #e5e5e5;
         }
       }
       &_wrap {
-        filter: drop-shadow(0px 28px 13px #0c0c0c);
-
         z-index: 8;
         width: 50%;
         position: relative;
         padding-bottom: 20px;
+        &-fb {
+          display: flex;
+          justify-content: center;
+        }
         @include pad {
           width: 100%;
         }
@@ -515,6 +527,8 @@ $grayBack: #e5e5e5;
         }
       }
       &_note {
+        filter: drop-shadow(0px 28px 13px #0c0c0c);
+
         max-width: 400px;
         margin: 0 auto;
         @include pad {
