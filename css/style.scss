@@ -357,9 +357,7 @@ $grayBack: #e5e5e5;
       @include tri(73px);
       position: relative;
       z-index: 6;
-      @include pad() {
-        // @include tri(0);
-      }
+
       @include mobile() {
         @include tri(0);
       }
