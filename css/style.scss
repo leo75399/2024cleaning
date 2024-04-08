@@ -357,6 +357,9 @@ $grayBack: #e5e5e5;
       @include tri(73px);
       position: relative;
       z-index: 6;
+      @include pad() {
+        // @include tri(0);
+      }
       @include mobile() {
         @include tri(0);
       }
@@ -367,6 +370,9 @@ $grayBack: #e5e5e5;
     padding-bottom: 185px;
     position: relative;
     z-index: 6;
+    @include pad() {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    }
     @include mobile() {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
       padding-bottom: 125px;
