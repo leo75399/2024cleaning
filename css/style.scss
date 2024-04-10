@@ -354,10 +354,9 @@ $grayBack: #e5e5e5;
   .feedback {
     &_wrap {
       @include wrap;
-      @include tri(73px);
+      @include tri(76px);
       position: relative;
       z-index: 6;
-
       @include mobile() {
         @include tri(0);
       }
